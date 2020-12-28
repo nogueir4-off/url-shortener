@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/public",
-      "dest": "/public"
+      "src": "./public",
+      "dest": "./public"
     }
   ],
   "alias": [
