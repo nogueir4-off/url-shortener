@@ -4,7 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon server.js"
+=======
+    "start": "node server.js",
+    "verselBuild": "node server.js"
+>>>>>>> 48e34696fd8faf0cf9e8941c8398fc824acc91b6
   },
   "keywords": [],
   "author": "",
