@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<title>nog.sh</title>
-</head>
-<body>
-	<header>
-		<h1>
-			nog.sh - short urls 4ur
-		</h1>
-	</header>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<link rel="stylesheet" href="styles.css">   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>	<script src="app.js"></script>	<title>nog.sh</title></head><body>	<header>		<h1>			nog.sh<i class="fas fa-seedling"></i>		</h1>		<main id="app">			<form @submit.prevent="createUrl()">				<input v-model="url" required="true" name="url" id="url" placeholder="link" spellcheck="false">				<input v-model="slug" name="slug" id="slug" placeholder="tag (optional)" spellcheck="false">								<button type="submit">Create</button>				<pre>					{{JSON.stringify(created, null, 2)}}				</pre>			</form>		</main>	</header></body></html>

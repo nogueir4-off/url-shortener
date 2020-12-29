@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');*/
+
 *, ::before, ::after {
 	margin: 0;
 	padding: 0;
@@ -5,10 +7,103 @@
 }
 
 body {
-	font-family: --apple-system, sans-serif;
+	font-family: "Space Mono", --apple-system, sans-serif;
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgb(29,29,29);
+	background: -moz-radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	background: radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1d",endColorstr="#202020",GradientType=1);
+	min-height: 100vh;
 }
 
 header h1 {
 	text-align: center;
+	font-size: 80px;
 	margin: 1rem;
+	letter-spacing: -3px;
+
+	color: #40AC5F;
 } 
+
+header h1 i {
+	position: relative;
+	bottom: 3px;	
+	font-size: 62px;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+input {
+	background-color: #393939; 
+	outline: none;
+	border: none;
+	padding: 5px;
+	padding-top: 6px;
+	min-width: 240px;
+	margin: 5px;
+	border-radius: 4px;
+	height: 40px;
+}
+
+input:focus {
+	border: 2px solid black;
+}
+
+form #url::placeholder {
+	text-align: center;
+	color: #202020; 
+	font-size: 20px;
+}
+
+form #slug::placeholder {
+	text-align: center;
+	color: #202020; 
+	font-size: 20px;
+}
+
+form button	{
+	border: 2px solid #40AC5F;
+	min-width: 240px;
+	margin: 5px;
+	padding: 5px;
+	font-size: 15px;
+	height: 40px;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: font, color, background-color 0.3s ease;
+	background-color: transparent;
+	color: #40AC5F;
+}
+
+form button:hover {
+	background-color: #40AC5F;
+	color: rgba(32,32,32,1);
+	font-weight: bold; 
+}
+
+form button:active {
+	-webkit-transform: scale(0.98);
+	   -moz-transform: scale(0.98);
+	    -ms-transform: scale(0.98);
+	     -o-transform: scale(0.98);
+	        transform: scale(0.98);
+}
+
+pre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}

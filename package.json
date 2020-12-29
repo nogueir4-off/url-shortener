@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    // "devStart": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,10 +15,11 @@
     "helmet": "^4.2.0",
     "monk": "^7.3.2",
     "morgan": "^1.10.0",
-    "yup": "^0.32.8"
+    "nanoid": "^3.1.20",
+    "yup": "^0.32.8",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "nodemon": "^2.0.6"
   }
 }
