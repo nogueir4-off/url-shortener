@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Space Mono", --apple-system, sans-serif;
+	font-weight: 700;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgb(29,29,29);
+	background: -moz-radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	background: radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(32,32,32,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1d",endColorstr="#202020",GradientType=1);
+	min-height: 90vh;
+}
+
+.notfound {
+	font-weight: 700;
+	margin-bottom: -45px;
+	color: #40AC5F;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-size: 80px;
+	margin: -10px;
+	margin: 1rem;
+	letter-spacing: -3px;
+	word-spacing: -25px;
+
+	font-weight: lighter;
+
+	color: #fff;
+} 
+
+span {
+	text-align: center;
+	font-size: 30px;
+	margin: 1rem;
+	margin: -10px;
+	letter-spacing: -2px;
+
+	color: white;
+} 
+
+span:hover > .fas.fa-arrow-left {
+	transform: translateX(-5px);
+}
+
+span .fas.fa-arrow-left {
+	font-size: 20px;
+	color: white;
+	position: relative;
+	transition: transform 0.5s ease;
+	left: 5px;
+}
+
+span .fas.fa-seedling {
+	position: relative;
+	bottom: 1.3px;
+	color: white;
+	right: 12px;	
+	font-size: 20px;
+}
